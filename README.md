@@ -1,0 +1,1 @@
+# Note: The .env file is intentionally tracked in Git for learning purposes.
