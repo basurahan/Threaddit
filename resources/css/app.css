@@ -1,2 +1,14 @@
 @import 'tailwindcss';
 @source "../views";
+
+@theme {
+    --color-primary: #FF5700;
+    --color-surface-1: #FFFFFF;
+    --color-surface-1-border: #00000033;
+    --color-surface-2: #E5EBEE;
+
+    --margin-small: 8px;
+    --margin-content: 16px;
+    --padding-small: 8px;
+    --padding-content: 16px;
+}
