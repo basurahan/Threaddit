@@ -13,8 +13,8 @@ class IconButton extends Component
     public function mount(string $display = Display::Mobile->value)
     {
         $this->display = match (Display::tryFrom($display)) {
-            Display::Desktop => "hidden sm:inline-block",
-            Display::Mobile => "inline-block sm:hidden",
+            Display::Desktop => "hidden lg:inline-block",
+            Display::Mobile => "inline-block lg:hidden",
         };
     }
 

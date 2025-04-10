@@ -14,8 +14,8 @@ class TextIconButton extends Component
     public function mount(string $display = Display::Mobile->value)
     {
         $this->display = match (Display::tryFrom($display)) {
-            Display::Desktop => "hidden sm:inline-flex",
-            Display::Mobile => "inline-flex sm:hidden",
+            Display::Desktop => "hidden lg:inline-flex",
+            Display::Mobile => "inline-flex lg:hidden",
         };
     }
 
