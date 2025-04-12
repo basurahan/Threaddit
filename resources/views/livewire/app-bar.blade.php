@@ -18,6 +18,11 @@
         <livewire:text-icon-button icon="plus" label="Create" :display="Display::Desktop->value" />
         <livewire:icon-button icon="bell" :display="Display::Desktop->value" />
         <livewire:image-button src="/assets/placeholder-user.jpg" :display="Display::Desktop->value" />
-        <livewire:icon-button icon="more" />
+
+        @if ($isDrawerOpen)
+            <livewire:icon-button icon="close" action="open-drawer" />
+        @else
+            <livewire:icon-button icon="more" action="open-drawer" />
+        @endif
     </div>
 </nav>

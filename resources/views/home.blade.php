@@ -7,7 +7,6 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <livewire:app-bar />
-    <livewire:desktop-drawer />
+    <livewire:main-layout />
 </body>
 </html>

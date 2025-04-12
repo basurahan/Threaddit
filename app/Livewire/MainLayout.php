@@ -5,7 +5,7 @@ namespace App\Livewire;
 use Livewire\Component;
 use Livewire\Attributes\On;
 
-class AppBar extends Component
+class MainLayout extends Component
 {
     public $isDrawerOpen = false;
 
@@ -27,6 +27,6 @@ class AppBar extends Component
 
     public function render()
     {
-        return view('livewire.app-bar');
+        return view('livewire.main-layout');
     }
 }

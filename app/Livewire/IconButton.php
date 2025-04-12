@@ -9,6 +9,12 @@ class IconButton extends Component
 {
     public $display;
     public $icon;
+    public $action;
+
+    public function onIconButtonClick()
+    {
+        $this->dispatch('icon-button-click', action: $this->action);
+    }
 
     public function mount(string $display = Display::Mobile->value)
     {
