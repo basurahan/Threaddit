@@ -5,7 +5,7 @@ namespace App\Livewire;
 use Livewire\Component;
 use Livewire\Attributes\On;
 
-class Drawer extends Component
+class DesktopDrawer extends Component
 {
     public $home = 'Home';
     public $popular = 'Popular';
@@ -27,6 +27,6 @@ class Drawer extends Component
 
     public function render()
     {
-        return view('livewire.drawer');
+        return view('livewire.desktop-drawer');
     }
 }

@@ -8,6 +8,6 @@
 </head>
 <body>
     <livewire:app-bar />
-    <livewire:drawer />
+    <livewire:desktop-drawer />
 </body>
 </html>
