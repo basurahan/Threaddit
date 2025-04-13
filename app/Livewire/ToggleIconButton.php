@@ -5,22 +5,24 @@ namespace App\Livewire;
 use Livewire\Component;
 use App\Enums\Display;
 
-class IconButton extends Component
+class ToggleIconButton extends Component
 {
+    public $data;
     public $display;
-    public $icon;
-    public $action;
+    public $default;
+    public $checked;
 
-    public function mount(string $display = Display::Mobile->value)
+    public function mount(string $display = Display::Mobile->value, string $data = 'toggleData')
     {
         $this->display = match (Display::tryFrom($display)) {
             Display::Desktop => "hidden lg:inline-block",
             Display::Mobile => "inline-block lg:hidden",
         };
+        $this->data = $data;
     }
 
     public function render()
     {
-        return view('livewire.icon-button');
+        return view('livewire.toggle-icon-button');
     }
 }
