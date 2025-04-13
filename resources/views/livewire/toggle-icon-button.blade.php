@@ -1,10 +1,10 @@
-<a 
+<a
     x-data="{{ $data }}"
     @class([
         $display,
-        'rounded-full focus:outline-none hover:bg-surface-2 p-[var(--padding-small)]'
+        'select-none rounded-full focus:outline-none hover:bg-surface-2 p-[var(--padding-small)]'
     ])
-    @click="toggle()"
+    @click.prevent="toggle()"
     >
 
     <template x-if="!checked">
