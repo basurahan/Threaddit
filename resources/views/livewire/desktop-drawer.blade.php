@@ -1,16 +1,8 @@
-<aside class="hidden lg:block absolute left-[0px] top-[var(--appbar-height)] h-[var(--drawer-height)] w-[271px] bg-surface-1 border-r border-surface-1-border">
+<aside class="hidden lg:block fixed left-[0px] top-[var(--appbar-height)] h-[var(--drawer-height)] w-[var(--drawer-width)] bg-surface-1 border-r border-surface-1-border">
     <ul class="list-none px-[var(--padding-content)] mt-[var(--margin-content)]">
-        <li class="mt-[var(--margin-small)]">
-            <livewire:drawer-menu icon="home" label="Home" :selected="$selected === $home" />
-        </li>
-
-        <li class="mt-[var(--margin-small)]">
-            <livewire:drawer-menu icon="star-off" label="Popular" :selected="$selected === $popular" />
-        </li>
-
-        <li class="mt-[var(--margin-small)]">
-            <livewire:drawer-menu icon="like-o" label="All" :selected="$selected === $all" />
-        </li>
+        @foreach ($drawerItems as $item)
+            <livewire:drawer-menu :path="$item['path']" :icon="$item['icon']" :label="$item['label']" :selected="$item['path'] === $section" />
+        @endforeach
     </ul>
 
     <div class="border-t border-surface-1-border mt-[var(--margin-content)]"></div>

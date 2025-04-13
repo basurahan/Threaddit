@@ -2,7 +2,7 @@
     use App\Enums\Display;
 @endphp
 
-<nav class="absolute top-[0px] flex flex-row items-center bg-surface-1 border-b border-surface-1-border h-[var(--appbar-height)] w-full px-[var(--margin-content)]">
+<nav class="fixed top-[0px] flex flex-row items-center bg-surface-1 border-b border-surface-1-border h-[var(--appbar-height)] w-full px-[var(--margin-content)]">
     <img src="/assets/brand-logo.png" class="size-[32px]" />
     <h1 class="font-bold text-lg ms-[var(--margin-small)]">{{ config('app.name') }}</h1>
 

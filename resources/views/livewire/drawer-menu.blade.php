@@ -1,5 +1,5 @@
-<a 
-    wire:click.prevent="onMenuClicked"
+<a
+    href="{{ route('home', ['section' => $path ]) }}"
     @class([
         'bg-surface-2' => $selected,
         'inline-flex flex-row items-center w-full rounded-[8px] hover:bg-surface-2 cursor-pointer py-[var(--padding-medium)] px-[var(--padding-content)]'

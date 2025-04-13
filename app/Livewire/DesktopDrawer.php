@@ -3,26 +3,16 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use Livewire\Attributes\On;
+use App\Constants\DrawerItems;
 
 class DesktopDrawer extends Component
 {
-    public $home = 'Home';
-    public $popular = 'Popular';
-    public $all = 'All';
-
-    public $selected;
-
-    #[On('drawer-menu-click')]
-    public function onMenuClick(string $label)
-    {
-        $this->selected = $label;
-        $this->dispatch('drawer-menu-selected', label: $this->selected);
-    }
+    public $section;
+    public $drawerItems = DrawerItems::items;
 
     public function mount()
     {
-        $this->selected = $this->home;
+        $this->section = request()->path();
     }
 
     public function render()

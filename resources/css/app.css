@@ -4,6 +4,7 @@
 @theme {
     --appbar-height: 56px;
     --drawer-height: calc(100vh - var(--appbar-height));
+    --drawer-width: 271px;
 
     --color-primary: #FF5700;
     --color-surface-1: #FFFFFF;

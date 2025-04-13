@@ -11,16 +11,11 @@ class DrawerMenu extends Component
     public $src;
     public $label;
     public $selected;
+    public $path;
 
-    #[On('drawer-menu-selected')]
-    public function onMenuSelected(string $label)
+    public function mount(string $path = '#')
     {
-        $this->selected = $label === $this->label;
-    }
-
-    public function onMenuClicked()
-    {
-        $this->dispatch('drawer-menu-click', label: $this->label);
+        $this->path = $path;
     }
 
     public function render()
