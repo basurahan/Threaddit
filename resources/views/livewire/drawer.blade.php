@@ -1,16 +1,8 @@
 <aside x-data="drawerData" x-show="checked" class="block lg:hidden absolute top-[var(--appbar-height)] h-[var(--drawer-height)] w-full bg-surface-1">
     <ul class="list-none px-[var(--padding-content)] mt-[var(--margin-content)]">
-        <li class="mt-[var(--margin-small)]">
-            <livewire:drawer-menu icon="home" label="Home" :selected="false" />
-        </li>
-
-        <li class="mt-[var(--margin-small)]">
-            <livewire:drawer-menu icon="star-off" label="Popular" :selected="false" />
-        </li>
-
-        <li class="mt-[var(--margin-small)]">
-            <livewire:drawer-menu icon="like-o" label="All" :selected="false" />
-        </li>
+        @foreach ($drawerItems as $item)
+            <livewire:drawer-menu :path="$item['path']" :icon="$item['icon']" :label="$item['label']" :selected="$item['path'] === $section" />
+        @endforeach
     </ul>
 
     <div class="border-t border-surface-1-border mt-[var(--margin-content)]"></div>
