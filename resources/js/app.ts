@@ -1,6 +1,7 @@
-import { Livewire, Alpine } from '../../vendor/livewire/livewire/dist/livewire.esm'
+import {  Livewire, Alpine } from '@livewire'
 
 document.addEventListener('alpine:init', () => {
+
     Alpine.store('drawer', {
         checked: false,
         toggle() {

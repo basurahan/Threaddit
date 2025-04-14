@@ -15,4 +15,9 @@ export default defineConfig({
     server: {
         cors: true,
     },
+    resolve: {
+        alias: {
+            '@livewire': '/vendor/livewire/livewire/dist/livewire.esm.js'
+        }
+    }
 });
