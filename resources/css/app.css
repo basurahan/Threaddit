@@ -3,7 +3,7 @@
 
 @theme {
     --appbar-height: 56px;
-    --drawer-height: calc(100vh - var(--appbar-height));
+    --drawer-height: 100%;
     --drawer-width: 271px;
 
     --color-primary: #FF5700;
