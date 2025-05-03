@@ -14,6 +14,10 @@ export default defineConfig({
     ],
     server: {
         cors: true,
+        host: true,
+        hmr: {
+            host: '192.168.0.103'
+        }
     },
     resolve: {
         alias: {
