@@ -15,7 +15,7 @@
 
     <div class="flex flex-row items-center justify-end gap-x-[var(--margin-small)]">
         <livewire:icon-button icon="search" :display="Display::Mobile->value" />
-        <livewire:icon-button icon="message" :display="Display::Desktop->value" />
+        <livewire:icon-button icon="message" :display="Display::Multiplatform->value" />
         <livewire:text-icon-button icon="plus" label="Create" :display="Display::Desktop->value" />
         <livewire:icon-button icon="bell" :display="Display::Multiplatform->value" />
         <livewire:image-button src="/assets/placeholder-user.jpg" :display="Display::Desktop->value" />
