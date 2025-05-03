@@ -19,6 +19,6 @@
         <livewire:components.text-icon-button icon="plus" label="Create" :display="Display::Desktop->value" />
         <livewire:components.icon-button icon="bell" :display="Display::Multiplatform->value" />
         <livewire:components.image-button src="/assets/placeholder-user.jpg" :display="Display::Desktop->value" />
-        <livewire:toggle-icon-button default="more" checked="close" data="drawerData" />
+        <livewire:components.toggle-icon-button default="more" checked="close" data="drawerData" />
     </div>
 </nav>

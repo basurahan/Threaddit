@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Components;
 
 use Livewire\Component;
 use App\Enums\Display;
@@ -23,6 +23,6 @@ class ToggleIconButton extends Component
 
     public function render()
     {
-        return view('livewire.toggle-icon-button');
+        return view('livewire.components.toggle-icon-button');
     }
 }
