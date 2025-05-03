@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Components;
 
 use Livewire\Component;
 use App\Enums\Display;
@@ -21,6 +21,6 @@ class TextIconButton extends Component
 
     public function render()
     {
-        return view('livewire.text-icon-button');
+        return view('livewire.components.text-icon-button');
     }
 }
