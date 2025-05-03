@@ -8,17 +8,20 @@ class DrawerItems
         array(
             'icon' => 'home',
             'label' => 'Home',
-            'path' => 'home'
+            'path' => 'home',
+            'page' => 'pages.home'
         ),
         array(
             'icon' => 'star-off',
             'label' => 'Popular',
-            'path' => 'popular'
+            'path' => 'popular',
+            'page' => 'pages.home'
         ),
         array(
             'icon' => 'like-o',
             'label' => 'All',
-            'path' => 'all'
+            'path' => 'all',
+            'page' => 'pages.home'
         )
     );
 
