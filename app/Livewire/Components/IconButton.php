@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Components;
 
 use Livewire\Component;
 use App\Enums\Display;
@@ -22,6 +22,6 @@ class IconButton extends Component
 
     public function render()
     {
-        return view('livewire.icon-button');
+        return view('livewire.components.icon-button');
     }
 }

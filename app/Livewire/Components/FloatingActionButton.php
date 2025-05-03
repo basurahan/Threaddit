@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Components;
 
 use Livewire\Component;
 use App\Enums\Display;
@@ -18,6 +18,6 @@ class FloatingActionButton extends Component
 
     public function render()
     {
-        return view('livewire.floating-action-button');
+        return view('livewire.components.floating-action-button');
     }
 }
