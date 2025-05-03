@@ -1,4 +1,12 @@
 <aside x-data="drawerData" x-show="checked" class="block lg:hidden fixed top-[var(--appbar-height)] h-[var(--drawer-height)] w-full bg-surface-1">
+    
+    <div class="flex items-center justify-center mt-[var(--margin-content)]">
+        <a class="select-none inline-flex flex-col items-center justify-center rounded-[12px] border-1 border-[var(--color-surface-1-border)] p-[12px] hover:bg-surface-2">
+            <img src="https://avatar.iran.liara.run/public" class="size-[54px]">
+            <span class="text-sm mt-[var(--margin-medium)]">Renz Carlo Salanga</span>
+        </a>
+    </div>
+    
     <ul class="list-none px-[var(--padding-content)] mt-[var(--margin-content)]">
         @foreach ($drawerItems as $item)
             <livewire:drawer-menu :path="$item['path']" :icon="$item['icon']" :label="$item['label']" :selected="$item['path'] === $section" />
