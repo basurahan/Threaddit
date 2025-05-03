@@ -1,4 +1,4 @@
-<aside class="hidden lg:block fixed left-[0px] top-[var(--appbar-height)] h-[var(--drawer-height)] w-[var(--drawer-width)] bg-surface-1 border-r border-surface-1-border">
+<aside class="hidden lg:block size-full bg-surface-1 border-r border-surface-1-border">
     <ul class="list-none px-[var(--padding-content)] mt-[var(--margin-content)]">
         @foreach ($drawerItems as $item)
             <livewire:drawer-menu :path="$item['path']" :icon="$item['icon']" :label="$item['label']" :selected="$item['path'] === $section" />

@@ -5,6 +5,8 @@
     --appbar-height: 56px;
     --drawer-height: 100%;
     --drawer-width: 271px;
+    --grid-mobile-layout: 1fr;
+    --grid-desktop-layout: var(--drawer-width) 1fr;
 
     --color-primary: #FF5700;
     --color-surface-1: #FFFFFF;
