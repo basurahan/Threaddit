@@ -3,4 +3,6 @@
     <livewire:drawer />
     <livewire:desktop-drawer />
     <livewire:main-layout-content />
+
+    <livewire:floating-action-button />
 </div>

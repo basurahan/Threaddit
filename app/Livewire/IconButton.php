@@ -16,6 +16,7 @@ class IconButton extends Component
         $this->display = match (Display::tryFrom($display)) {
             Display::Desktop => "hidden lg:inline-block",
             Display::Mobile => "inline-block lg:hidden",
+            Display::Multiplatform => 'inline-block'
         };
     }
 

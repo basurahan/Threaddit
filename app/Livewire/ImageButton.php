@@ -15,6 +15,7 @@ class ImageButton extends Component
         $this->display = match (Display::tryFrom($display)) {
             Display::Desktop => "hidden lg:inline-flex",
             Display::Mobile => "inline-flex lg:hidden",
+            Display::Multiplatform => 'inline-flex'
         };
     }
 
