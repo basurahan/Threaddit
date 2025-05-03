@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Components;
 
 use Livewire\Component;
-use Livewire\Attributes\On;
 
 class DrawerMenu extends Component
 {
@@ -20,6 +19,6 @@ class DrawerMenu extends Component
 
     public function render()
     {
-        return view('livewire.drawer-menu');
+        return view('livewire.components.drawer-menu');
     }
 }

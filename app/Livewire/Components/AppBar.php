@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Components;
 
 use Livewire\Component;
 
@@ -8,6 +8,6 @@ class AppBar extends Component
 {
     public function render()
     {
-        return view('livewire.app-bar');
+        return view('livewire.components.app-bar');
     }
 }

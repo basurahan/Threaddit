@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Components;
 
 use Livewire\Component;
 use App\Constants\DrawerItems;
@@ -17,6 +17,6 @@ class DesktopDrawer extends Component
 
     public function render()
     {
-        return view('livewire.desktop-drawer');
+        return view('livewire.components.desktop-drawer');
     }
 }
