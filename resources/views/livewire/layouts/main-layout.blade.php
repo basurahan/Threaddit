@@ -7,5 +7,5 @@
     <livewire:components.app-bar />
     <livewire:components.drawer />
     <livewire:components.desktop-drawer />
-    <livewire:main-layout-content />
+    <livewire:pages.home />
 </div>
