@@ -8,6 +8,6 @@ class MainLayout extends Component
 {
     public function render()
     {
-        return view('livewire.layout.main-layout');
+        return view('livewire.layouts.main-layout');
     }
 }
