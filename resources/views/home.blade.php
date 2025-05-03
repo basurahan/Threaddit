@@ -1,3 +1,3 @@
 <x-scaffold>
-    <livewire:main-layout />
+    <livewire:layout.main-layout />
 </x-scaffold>

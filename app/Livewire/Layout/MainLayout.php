@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Layout;
 
 use Livewire\Component;
 
@@ -8,6 +8,6 @@ class MainLayout extends Component
 {
     public function render()
     {
-        return view('livewire.main-layout');
+        return view('livewire.layout.main-layout');
     }
 }
