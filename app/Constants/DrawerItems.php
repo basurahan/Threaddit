@@ -13,12 +13,12 @@ class DrawerItems
         'popular' => array(
             'icon' => 'star-off',
             'label' => 'Popular',
-            'page' => 'pages.home'
+            'page' => 'pages.popular'
         ),
         'all' => array(
             'icon' => 'like-o',
             'label' => 'All',
-            'page' => 'pages.home'
+            'page' => 'pages.all'
         )
     );
 
