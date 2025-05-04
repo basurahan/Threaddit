@@ -1,7 +1,7 @@
-<aside class="hidden lg:block size-full bg-surface-1 border-r border-surface-1-border">
+<aside class="hidden lg:block bg-surface-1 border-r border-surface-1-border">
     <ul class="list-none px-[var(--padding-content)] mt-[var(--margin-content)]">
-        @foreach ($drawerItems as $item)
-            <livewire:components.drawer-menu :path="$item['path']" :icon="$item['icon']" :label="$item['label']" :selected="$item['path'] === $section" />
+        @foreach ($drawerItems as $key => $val)
+            <livewire:components.drawer-menu :path="$key" :icon="$val['icon']" :label="$val['label']" :selected="$key === $section" />
         @endforeach
     </ul>
 

@@ -5,33 +5,35 @@ namespace App\Constants;
 class DrawerItems
 {
     public const items = array(
-        array(
+        'home' => array(
             'icon' => 'home',
             'label' => 'Home',
-            'path' => 'home',
             'page' => 'pages.home'
         ),
-        array(
+        'popular' => array(
             'icon' => 'star-off',
             'label' => 'Popular',
-            'path' => 'popular',
             'page' => 'pages.home'
         ),
-        array(
+        'all' => array(
             'icon' => 'like-o',
             'label' => 'All',
-            'path' => 'all',
             'page' => 'pages.home'
         )
     );
 
+    public static function getSectionPage(string $section)
+    {
+        return self::items[$section]['page'];
+    }
+
     public static function paths()
     {
-        return array_map(
-            function($item) {
-                return $item['path'];
-            },
-            self::items
-        );
+        $paths = [];
+        foreach (self::items as $key => $val)
+        {
+            array_push($paths, $key);
+        }
+        return $paths;
     }
 }
